@@ -1,6 +1,7 @@
 package lesson1;
 
 public class Treadmill {
+
     private int line;
     public Treadmill(int line) {
         this.line = line;

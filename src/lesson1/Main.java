@@ -31,6 +31,7 @@ public class Main {
     public static void testRun(Run r, int line){
         r.run();
         Treadmill treadmill = new Treadmill(line);
+
     }
 
     public static void testJump(Jump j, int h){
