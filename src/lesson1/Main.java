@@ -4,14 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         Cat cat = new Cat();
-        cat.run();
-        cat.jump();
         Robot robot = new Robot();
-        robot.jump();
-        robot.run();
         Human human = new Human();
-        human.jump();
-        human.run();
 
         Jump[] jumps = {
                 new Cat(),
@@ -35,12 +29,12 @@ public class Main {
     }
 
     public static void testRun(Run r, int line){
+        r.run();
         Treadmill treadmill = new Treadmill(line);
-        System.out.println(treadmill.treadminn());
     }
 
     public static void testJump(Jump j, int h){
+        j.jump();
         Wall wall = new Wall(h);
-        System.out.println(wall.wall());
     }
 }
